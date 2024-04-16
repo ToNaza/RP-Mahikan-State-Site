@@ -37,7 +37,9 @@ margin-top: 10px;
 .text_info{
     color: white;
     font-family: 'Jura';
+    font-size: 20px;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 button{
