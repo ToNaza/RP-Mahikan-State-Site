@@ -44,8 +44,8 @@ button{
     text-align: center;
     color:black;
     background-color: C1C1C1 ;
-
-    width: 410px;
+    border: 0px;
+    width: 330px;
     height: 40px;
     border-radius: 15px;
     margin-top: 20px;
