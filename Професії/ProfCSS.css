@@ -68,8 +68,8 @@ font-size: 30px;
     margin-top: -9px;
     font-family: 'Jura';
     
-}
-img{
+
+ img{
     width: 100px;
     height: 100px;
     border-radius: 14px;
@@ -85,4 +85,124 @@ img{
     position: fixed;
   margin-top: -28px;
   margin-left: 103px;
+}   
 }
+
+
+.postSD{
+    width: 330px ;
+    height: 100px ;
+    background-color: ABABAB;
+    border-radius: 14px;
+    margin: 17px;
+    margin-top: -9px;
+    font-family: 'Jura';
+    
+
+ img{
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+}
+.t1{
+  font-size: 25px;  
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 103px;
+}
+.t2{
+    font-size: 20px;
+    position: fixed;
+  margin-top: -28px;
+  margin-left: 103px;
+}   
+}
+
+
+
+
+.postAoSB{
+    width: 330px ;
+    height: 100px ;
+    background-color: ABABAB;
+    border-radius: 14px;
+    margin: 17px;
+    font-family: 'Jura';
+    
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+}
+.t1{
+  font-size: 22px;  
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 103px;
+}
+.t2{
+    font-size: 20px;
+    position: fixed;
+  margin-top: -28px;
+  margin-left: 103px;
+}   
+}
+
+.postKOS{
+    width: 330px ;
+    height: 100px ;
+    background-color: FF7E7E;
+    border-radius: 14px;
+    margin: 17px;
+    font-family: 'Jura';
+    
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+}
+.t1{
+  font-size: 22px;  
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 103px;
+}
+.t2{
+    font-size: 20px;
+    position: fixed;
+  margin-top: -28px;
+  margin-left: 103px;
+}   
+}
+
+
+.postGSB{
+    width: 330px ;
+    height: 100px ;
+    background-color: ABABAB;
+    border-radius: 14px;
+    margin: 17px;
+    font-family: 'Jura';
+    
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+}
+.t1{
+  font-size: 22px;  
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 103px;
+}
+.t2{
+    font-size: 20px;
+    position: fixed;
+  margin-top: -28px;
+  margin-left: 103px;
+}   
+}
+
