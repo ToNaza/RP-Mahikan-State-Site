@@ -175,3 +175,91 @@ img{
 }   
 }
 
+/*Початок частини СБ*/
+
+.mod{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99998;
+background-color: rgba(0,0,0, .3);
+display:grid;
+align-items: center;
+overflow: auto;
+visibility: hidden;
+opacity: 0;
+transition: opacity .4s, visibility .4s;
+}
+
+.mod_box{
+width: 400px;
+padding: 15px;
+height: 570px;
+z-index: 1;
+background-color: white;
+font-family: 'Jura';
+background-color: EFEFEF;
+border-radius: 18px;
+font-size: 18px;
+margin-left: 40px;
+
+-webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+-moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+
+transform: scale(0);
+transition: transform .6s ;
+
+h2{
+  text-align: center;
+}
+
+p{
+margin-top: 20px;
+}
+
+.mes{
+  background-color: AAAAAA;
+  width: 330px;
+  height: 35px;
+  font-size: 17px;
+  border: 0px;
+  border-radius: 7px;
+  margin-left: 17px;
+  margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення по X, Y, розмір розмиття, колір */
+    cursor: pointer;
+}
+
+.close{
+background-color: rgb(220, 220, 220);
+width: 110px;
+height: 29px;
+margin-top: 15px;
+border: 0px;
+border-radius: 8px;
+margin-left: 238px;
+
+border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення по X, Y, розмір розмиття, колір */
+    cursor: pointer;
+}
+}
+
+.mod.open{
+  visibility: visible;
+  opacity: 1;
+}
+
+.mod.open .mod_box{
+  transform: scale(1);
+}
+
+/*Кінець частини СБ*/ 
+
+/*Початок частини Ао СБ*/
