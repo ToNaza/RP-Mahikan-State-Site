@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsfKYh6kr-QhzaZNOc5De4Ocegds6CS3w4VoeiM8g373B4_ml/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx6WZdW5ff90z1MKoUpgXq-o8yKebjAtliuWChuivU/dev'
   const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
@@ -6,7 +6,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
-      Access-Control-Allow-Origin: http://mozilla.org
   })
 
   fetch('https://example.com/api/data', { mode: 'no-cors' })
