@@ -8,17 +8,16 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
       .catch(error => console.error('Error!', error.message))
   })
 
-  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-  const apiUrl = 'https://example.com/api/data';
-  
-  fetch(proxyUrl + apiUrl)
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error fetching data:', error));
+  const myImage = document.querySelector("img");
 
-    fetch('https://example.com/api/data', { mode: 'no-cors' })
-  .then(response => {
-    // Робота з response буде обмежена через no-cors режим
-    console.log('Request sent successfully');
+const myRequest = new Request("flowers.jpg");
+
+fetch(myRequest)
+  .then((response) => {
+    console.log("response.url =", response.url); // response.url = https://mdn.github.io/dom-examples/fetch/fetch-response/flowers.jpg
+    return response.blob();
   })
-  .catch(error => console.error('Error sending request:', error));
+  .then((myBlob) => {
+    const objectURL = URL.createObjectURL(myBlob);
+    myImage.src = objectURL;
+  });
