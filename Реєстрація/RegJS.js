@@ -5,8 +5,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxACJSo_yxw2VU9w-TQ8G
 form.addEventListener('submit', e => {
     e.preventDefault();
 
+    const form = document.forms['submit-to-google-sheet'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
     const formData = new FormData(form);
-    fetch(proxyUrl + scriptURL, { 
+    fetch(scriptURL, { 
         method: 'POST', 
         body: formData
     })
