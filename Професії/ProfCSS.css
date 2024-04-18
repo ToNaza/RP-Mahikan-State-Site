@@ -194,16 +194,16 @@ transition: opacity .4s, visibility .4s;
 }
 
 .mod_box{
-width: 400px;
+width: 350px;
 padding: 15px;
-height: 570px;
+height: 520px;
 z-index: 1;
 background-color: white;
 font-family: 'Jura';
 background-color: EFEFEF;
 border-radius: 18px;
-font-size: 18px;
-margin-left: 40px;
+font-size: 16px;
+margin-left: 20px;
 
 -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
 -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
@@ -227,7 +227,7 @@ margin-top: 20px;
   font-size: 17px;
   border: 0px;
   border-radius: 7px;
-  margin-left: 17px;
+  margin-left: -5px;
   margin-top: 10px;
     border: none;
     border-radius: 5px;
@@ -242,7 +242,7 @@ height: 29px;
 margin-top: 15px;
 border: 0px;
 border-radius: 8px;
-margin-left: 238px;
+margin-left: 215px;
 
 border: none;
     border-radius: 5px;
