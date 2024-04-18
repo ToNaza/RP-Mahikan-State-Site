@@ -10,14 +10,14 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
 
   const myImage = document.querySelector("img");
 
-const myRequest = new Request("flowers.jpg");
-
-fetch(myRequest)
-  .then((response) => {
-    console.log("response.url =", response.url); // response.url = https://mdn.github.io/dom-examples/fetch/fetch-response/flowers.jpg
-    return response.blob();
-  })
-  .then((myBlob) => {
-    const objectURL = URL.createObjectURL(myBlob);
-    myImage.src = objectURL;
-  });
+  var invocation = new XMLHttpRequest();
+  var url = "http://bar.other/resources/credentialed-content/";
+  
+  function callOtherDomain() {
+    if (invocation) {
+      invocation.open("GET", url, true);
+      invocation.withCredentials = true;
+      invocation.onreadystatechange = handler;
+      invocation.send();
+    }
+  }
