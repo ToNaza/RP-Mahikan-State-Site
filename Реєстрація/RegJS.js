@@ -9,4 +9,10 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
       Access-Control-Allow-Origin: http://mozilla.org
   })
 
+  fetch('https://example.com/api/data', { mode: 'no-cors' })
+  .then(response => {
+    console.log('Request sent successfully');
+  })
+  .catch(error => console.error('Error sending request:', error));
+
   
