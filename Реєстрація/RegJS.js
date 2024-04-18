@@ -6,18 +6,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
+      Access-Control-Allow-Origin: http://mozilla.org
   })
 
-  const myImage = document.querySelector("img");
-
-  var invocation = new XMLHttpRequest();
-  var url = "http://bar.other/resources/credentialed-content/";
   
-  function callOtherDomain() {
-    if (invocation) {
-      invocation.open("GET", url, true);
-      invocation.withCredentials = true;
-      invocation.onreadystatechange = handler;
-      invocation.send();
-    }
-  }
