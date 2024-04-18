@@ -8,13 +8,10 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
       .catch(error => console.error('Error!', error.message))
   })
 
-  fetch('https://example.com/api/data', {
-    method: 'GET',
-    mode: 'cors', // Включення CORS
-    headers: {
-        'Content-Type': 'application/json'
-    }
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error('Error fetching data:', error));
+  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  const apiUrl = 'https://example.com/api/data';
+  
+  fetch(proxyUrl + apiUrl)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error fetching data:', error));
