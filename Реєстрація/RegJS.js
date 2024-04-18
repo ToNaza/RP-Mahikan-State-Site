@@ -16,4 +16,10 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error sending message:', error));
 });
 
+fetch('https://example.com/api/data', { mode: 'no-cors' })
+  .then(response => {
+    console.log('Request sent successfully');
+  })
+  .catch(error => console.error('Error sending request:', error));
+
   
