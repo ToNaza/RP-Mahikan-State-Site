@@ -15,3 +15,10 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Ao-06saTHRXFzFqBsf
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error('Error fetching data:', error));
+
+    fetch('https://example.com/api/data', { mode: 'no-cors' })
+  .then(response => {
+    // Робота з response буде обмежена через no-cors режим
+    console.log('Request sent successfully');
+  })
+  .catch(error => console.error('Error sending request:', error));
