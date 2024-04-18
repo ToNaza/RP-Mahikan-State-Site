@@ -1,6 +1,6 @@
 const form = document.getElementById('myForm');
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzIPwR8yhbIwVaDecsU66nwZ_dAjNxHj1TF0TVjYsAislyNsc2L4iU5jyx_p1QhRsI/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxACJSo_yxw2VU9w-TQ8GhM5UxRHkX1C_mmee83MOfq1VBI5mhDETsPUXgnFzKAr3Nc/exec';
 
 form.addEventListener('submit', e => {
     e.preventDefault();
