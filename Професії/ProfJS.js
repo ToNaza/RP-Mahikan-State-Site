@@ -23,3 +23,35 @@ document.getElementById("modSD").classList.remove("open")
         document.getElementById("closeGSB").addEventListener("click", function() {
         document.getElementById("modGSB").classList.remove("open")
         })
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var audioPlayer = document.getElementById('audioPlayer');
+            var playButton = document.getElementById('playButton');
+    
+            playButton.addEventListener('click', function() {
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    playButton.textContent = '';
+                } else {
+                    audioPlayer.pause();
+                    audioPlayer.currentTime = 0; // Повернення на початок
+                    playButton.textContent = 'Play Sound';
+                }
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const playButton = document.getElementById('playButton');
+            const overlay = document.getElementById('overlay');
+
+            playButton.addEventListener('click', function() {
+                // Показуємо overlay зображення
+                overlay.style.display = 'flex';
+
+                // Через 1 секунду ховаємо overlay
+                setTimeout(function() {
+                    overlay.style.display = 'none';
+                }, 1000);
+            });
+        });
