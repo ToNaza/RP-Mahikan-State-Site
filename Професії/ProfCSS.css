@@ -197,7 +197,7 @@ transition: opacity .4s, visibility .4s;
 .mod_box{
 width: 350px;
 padding: 15px;
-height: 570px;
+height: 550px;
 z-index: 1;
 background-color: white;
 font-family: 'Jura';
@@ -460,5 +460,5 @@ border: none;
   object-fit: contain; /* Зберігаємо співвідношення сторін зображення */
   border: 5px solid #000000; /* Білий рамка навколо зображення */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тінь навколо зображення */
-  margin-left: -120px;
+ 
 }
