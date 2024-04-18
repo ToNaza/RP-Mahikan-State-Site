@@ -26,21 +26,6 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error sending message:', error));
 });
-
-fetch(scriptURL, { 
-  method: 'POST', 
-  body: new FormData(form)
-})
-.then(response => {
-  if (response.ok) {
-    console.log('Message sent successfully!', response);
-  } else {
-    console.error('Failed to send message.', response);
-  }
-})
-.catch(error => {
-  console.error('Error sending message:', error);
-});
 })
 
 
