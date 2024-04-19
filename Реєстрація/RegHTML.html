@@ -16,7 +16,7 @@
         <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
 
         <script defer src="RegJS.js"></script>
-        
+        <script src="../version.js" defer></script>
     </head>
 
     <body>
@@ -57,7 +57,30 @@
         </main>
 
         <footer style="margin-top: 30px;">
-<a href="../index.html"> <button class="Exid"> На головну</button> </a>
+<button class="Exid" onclick="location.href='../index.html'"> На головну</button>
+<button class="open_button"><p class="open" id="open">Для Адмінів</p></button>
+
+
+<div class="modul" id="modul">
+    <div class="modul_box">
+
+
+        <h2>Введіть пароль</h2>
+        <input type="password" id="passwordInput" class="input" placeholder="Enter password" required>
+        
+    
+        <!-- Modal for displaying error message -->
+        <div id="errorMessageModal" style="display: none; position: absolute; ">
+            <p id="errorMessage"></p>
+            <button onclick="reloadWindow()"></button>
+        </div>
+    <button class="OK2" onclick="checkPassword()">Перейти</button>
+    <button class="close" id="close">Назад</button>
+    </div>
+    </div>
+
+
+    <p id="versionInfo" style="margin: 10px; position: absolute;"></p>
         </footer>
 
     </body>

@@ -1,35 +1,25 @@
-const form = document.getElementById('myForm');
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxACJSo_yxw2VU9w-TQ8GhM5UxRHkX1C_mmee83MOfq1VBI5mhDETsPUXgnFzKAr3Nc/exec';
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    const form = document.forms['submit-to-google-sheet'];
-
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    fetch(scriptURL, { 
-        method: 'POST', 
-        body: formData
+document.getElementById("open").addEventListener("click", function() {
+    document.getElementById("modul").classList.add("open")
     })
-    .then(response => {
-        if (response.ok) {
-            console.log('Message sent successfully!');
-            form.reset();
+    
+    document.getElementById("close").addEventListener("click", function() {
+    document.getElementById("modul").classList.remove("open")
+    })
+
+    function checkPassword() {
+        var passwordInput = document.getElementById('passwordInput').value;
+    
+        if (passwordInput === '22814') {
+            // Redirect to another page
+            window.location.href = '../Громадяни/GRinfoHTML.html'; // Замініть URL на потрібний
         } else {
-            console.error('Failed to send message.');
+            // Display error message and clear password input
+            var errorMessageModal = document.getElementById('errorMessageModal');
+            var errorMessageText = document.getElementById('errorMessage');
+            errorMessageText.textContent = 'Не вірний пароль, спробуйте ще раз';
+            errorMessageModal.style.display = 'block';
+    
+            // Clear password input field
+            document.getElementById('passwordInput').value = '';
         }
-    })
-    .catch(error => console.error('Error sending message:', error));
-});
-});
-
-
-
-
-
-  
+    }
