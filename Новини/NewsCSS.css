@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(22,22,30);
+background: linear-gradient(173deg, rgba(22,22,30,1) 1%, rgba(42,42,50,1) 42%, rgba(76,76,83,1) 76%, rgba(171,170,170,1) 100%);
+
+}
+
+.name_site_ops{
+padding-left: 20px;
+color:00D7CB;
+font-family: 'Kalam';
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 30px;
+color: #00bbff;
+}
+
+
+
+.divider {
+    height: 2px;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.text_info{
+    color: white;
+    font-family: 'Jura';
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    text-align: left; 
+    padding: 20px;
+}
+
+
+.text_info2{
+    color: white;
+    font-family: 'Jura';
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: -40px;
+    text-align: left; 
+    padding: 20px;
+}
+
+.Exid{
+    border: 0px;
+    border-radius: 10px;
+    background-color: D8D8D8;
+    width: 120px;
+    padding: 5px;
+
+    margin-left: 25px;
+}
+
+.post1_t1{
+    background-color: rgb(160, 160, 160);
+    border-radius: 11px;
+    width: 350px;
+    height: 130px;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 25px;
+
+
+    .datapost1{
+        margin-top: 7px;
+        text-align: right;
+    }
+}
+
+.post2_t2 {
+    background-color: rgb(160, 160, 160);
+    border-radius: 11px;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.post2_t2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    float: left; /* Залишаємо зображення ліворуч */
+    margin-right: 10px; /* Додаємо відступ справа від зображення */
+}
+
+.text1 {
+    margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
+}
+
+.text2 {
+    position: absolute;
+    top: 125px;
+    left: 5px;
+   
+}
+
+.datapost1 {
+    margin-top: 30px;
+    text-align: right;
+    clear: both; /* Зачищає плаваючі елементи */
+}
