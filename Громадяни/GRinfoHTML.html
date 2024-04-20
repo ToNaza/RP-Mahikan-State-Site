@@ -3,14 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GRinfoCSS.css">
     <title>Сitizens</title>
     <script src="../version.js" defer></script>
 </head>
 <body>
-    hello world
+    <main>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Telegram Username</th>
+                <th>Entry Date</th>
+                <th>Passport Creation Date</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+                <td>{{ user[3] }}</td>
+                <td>{{ user[4] }}</td>
+                <td>{{ user[5] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        </table>
+    </main>
     <footer>
         <button class="Exid" onclick="location.href='../index.html'"> На головну</button>
-        <p id="versionInfo" style="margin: 10px;"></p>
+        <p id="versionInfo" style="margin: 10px; color:white;"></p>
     </footer>
 </body>
 </html>
