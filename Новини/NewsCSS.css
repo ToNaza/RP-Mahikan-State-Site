@@ -69,10 +69,10 @@ color: #00bbff;
     height: 130px;
     margin: 10px;
     padding: 5px;
-    margin-left: 25px;
+    margin-left: 15px;
 
     p{
-        font-size: 5px;
+        font-size: 16px;
     }
 
     .datapost1{
@@ -85,10 +85,10 @@ color: #00bbff;
     background-color: rgb(160, 160, 160);
     border-radius: 11px;
     width: 350px;
-    height: 175px;
+    height: 170px;
     margin: 10px;
     padding: 5px;
-    margin-left: 25px;
+    margin-left: 15px;
     position: relative;
 }
 
@@ -102,18 +102,18 @@ color: #00bbff;
 
 .text1 {
     margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
-    font-size: 5px;
+    font-size: 15px;
 }
 
 .text2 {
     position: absolute;
     top: 125px;
     left: 5px;
-   font-size: 5px;
+   font-size: 15px;
 }
 
 .datapost1 {
     margin-top: 30px;
     text-align: right;
-    clear: both; /* Зачищає плаваючі елементи */
+    clear: both; 
 }
