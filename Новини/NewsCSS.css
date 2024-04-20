@@ -71,6 +71,9 @@ color: #00bbff;
     padding: 5px;
     margin-left: 25px;
 
+    p{
+        font-size: 15px;
+    }
 
     .datapost1{
         margin-top: 7px;
@@ -99,13 +102,14 @@ color: #00bbff;
 
 .text1 {
     margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
+    font-size: 15px;
 }
 
 .text2 {
     position: absolute;
     top: 125px;
     left: 5px;
-   
+   font-size: 15px;
 }
 
 .datapost1 {
