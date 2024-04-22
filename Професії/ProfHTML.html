@@ -11,6 +11,9 @@
     
         <script  defer src="ProfJS.js"></script>
         <script src="../version.js" defer></script>
+        <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -61,7 +64,7 @@
     Рядового, а також здати іспит не менше <br>
     ніж на 50%, бажано знати Конституцію та <br>
     Закони.</p>
-    <button class="mes">Надіслати запит на навчання</button> <br>
+    <button class="mes" id="open_tSD">Надіслати запит на навчання</button> <br>
     <button class="close" id="closeSD">Назад</button>
     </div>
     </div>
@@ -144,6 +147,31 @@
     <div id="overlay">
         <img src="../media/Арирал.jpg" alt="Displayed Image">
     </div>
+
+
+
+
+<div class="teachingSD" id="teachingSD">
+    <div class="T_BoxSD">
+
+        <h2>Ви вибрали посягу: (СД)</h2>
+
+        <p>
+            Ви натиснули на інлайд <br>
+            кнопку, будь ласка впишіть <br>
+            ваші данні знизу що б ми <br>
+            могли з вами зв’язатися.
+        </p>
+        
+        <input type="text" class="butT_SD" id="messageInput" placeholder="Ваш паспортний ID">
+
+        <p>Протягом дня вам напише адмін <br> К.О.С. зі званням Преподаватель</p>
+
+        <button onclick="sendMessage()" class="sentSD"> <i class="fas fa-paper-plane"></i> </button>
+        <button class="closeT_SD" id="closetSD">Назад</button>
+    </div>
+</div>
+
         </main>
 
         <footer style="margin-top: 30px;">
