@@ -76,7 +76,7 @@ document.getElementById("modSD").classList.remove("open")
                     const messageText = messageInput.value.trim(); // Получаем текст сообщения из поля ввода
                 
                     if (messageText === '') {
-                        alert( Громадянин вибирає прохід навчання в категорію Служби Допомоги);
+                        alert( 'Громадянин вибирає прохід навчання в категорію Служби Допомоги');
                         return;
                     }
                 
