@@ -80,8 +80,8 @@ document.getElementById("modSD").classList.remove("open")
                         return;
                     }
                 
-                    const botToken = 6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4;
-                    const chatId = https://t.me/ProfApplication_Bot;
+                    const botToken = '6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4';
+                    const chatId = 'https://t.me/ProfApplication_Bot';
                 
                     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
                     const data = {
