@@ -89,20 +89,7 @@ document.getElementById("modSD").classList.remove("open")
                         text: messageText
                     };
                 
-                    const xhr = new XMLHttpRequest();
-                    xhr.open('POST', url, true);
-                    xhr.setRequestHeader('Content-Type', 'application/json');
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState === XMLHttpRequest.DONE) {
-                            if (xhr.status === 200) {
-                                alert('Сообщение успешно отправлено в Telegram');
-                                messageInput.value = ''; // Очистить поле ввода после отправки
-                            } else {
-                                alert('Произошла ошибка при отправке сообщения');
-                            }
-                        }
-                    };
-                    xhr.send(JSON.stringify(data));
+                    
                 }
 
                 /*Закінчення відправки*/
