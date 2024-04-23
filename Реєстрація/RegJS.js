@@ -25,6 +25,6 @@ document.getElementById('tg').addEventListener('sumbit', function(e) {
    axios.post(URI_API, {
     chat_id: CHAT_ID,
     parse_mode: 'html',
-    text: massage
+    text: message
    })
 })
