@@ -15,8 +15,7 @@
 
         <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
 
-        <script defer src="RegJS.js"></script>
-        <script src="../version.js" defer></script>
+        
     </head>
 
     <body>
@@ -52,7 +51,7 @@
             <label for="entryDate"></label><p class="dataname">Дата входу до чату:</p><br>
             <input type="date" lang="en" name="entryDate" id="Date" class="vvod" required><br>
 
-          <button type="submit" class="ok" onclick="return gtag_report_conversion"><i class="fas fa-paper-plane"></i></button>
+          <button type="submit" class="ok" onclick="sendMessage"><i class="fas fa-paper-plane"></i></button>
          </div>
         </form>
           
@@ -84,6 +83,10 @@
 
     <p id="versionInfo" style="margin: 10px; position: absolute;"></p>
         </footer>
+
+        <script defer src="RegJS.js"></script>
+        <script src="../version.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     </body>
 </html>
