@@ -37,3 +37,26 @@ tr{
     background-color: white;
     font-size: 8px;
 }
+
+.ERROR{
+ margin-top: 180px;
+    color: red;
+    font-size: 26px;
+    font-family: 'Kadwa';
+    text-align: center;   
+}
+
+.text_ero{
+    margin-bottom: 190px;
+    color: red;
+    font-size: 26px;
+    font-family: 'Kadwa';
+    text-align: center;     
+}
+
+.vers{
+    margin-bottom: 30px;
+    margin-top: 120px;
+    margin: 10px;
+     color:white;
+}

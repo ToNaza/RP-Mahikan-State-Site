@@ -71,26 +71,6 @@ document.getElementById("modSD").classList.remove("open")
 
                 /*Відправка в ТГ СД*/ 
 
-                function sendMessage() {
-                    const messageInput = document.getElementById('messageInput');
-                    const messageText = messageInput.value.trim(); // Получаем текст сообщения из поля ввода
-                
-                    if (messageText === '') {
-                        alert( 'Громадянин вибирає прохід навчання в категорію Служби Допомоги');
-                        return;
-                    }
-                
-                    const botToken = '6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4';
-                    const chatId = 'https://t.me/ProfApplication_Bot';
-                
-                    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-                    const data = {
-                        chat_id: chatId,
-                        text: messageText
-                    };
-                
-                    
-                }
 
                 /*Закінчення відправки*/
                 /*Початок відправки Ао СБ*/
