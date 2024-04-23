@@ -8,7 +8,7 @@ document.getElementById("close").addEventListener("click", function() {
 
 
     
-import { -1002007292915, 6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4 } from "./apiKey";
+import { '-1002007292915', '6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4' } from "./apiKey";
 
 async function sendData(massage) {
     try {
