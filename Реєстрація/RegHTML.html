@@ -41,18 +41,18 @@
         <form name="submit-to-google-sheet" id="MyForm">
             <div class="osnova">
             <label for="Name" ></label><br>
-            <input type="text" name="Name" id="Name" class="vvod"  placeholder="Введіть своє ім'я" required><br>
+            <input type="text" name="Name" id="inp1" class="vvod"  placeholder="Введіть своє ім'я" required><br>
 
             <label for="Surname" ></label><br>
-            <input type="text" name="Surname" id="Surname" class="vvod"  placeholder="Видумайте собі фамілію" required><br>
+            <input type="text" name="Surname" id="inp2" class="vvod"  placeholder="Видумайте собі фамілію" required><br>
 
             <label for="Username" ></label><br>
-            <input type="text" name="Username" id="Username" class="vvod"  placeholder="Введіть ваш Tg Usetname " required><br>
+            <input type="text" name="Username" id="inp3" class="vvod"  placeholder="Введіть ваш Tg Usetname " required><br>
 
             <label for="entryDate"></label><p class="dataname">Дата входу до чату:</p><br>
-            <input type="date" lang="en" name="entryDate" id="entryDate" class="vvod" required><br>
+            <input type="date" lang="en" name="entryDate" id="inp4" class="vvod" required><br>
 
-          <button type="submit" class="ok" onclick="submitForm()"><i class="fas fa-paper-plane"></i></button>
+          <button type="submit" class="ok" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
          </div>
         </form>
           

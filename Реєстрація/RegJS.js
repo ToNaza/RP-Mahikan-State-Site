@@ -8,28 +8,29 @@ document.getElementById("close").addEventListener("click", function() {
 
 
     
-function submitForm() {
-    const form = document.getElementById('MyForm');
-    const formData = new FormData(form);
+import { -1002007292915, 6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4 } from "./apiKey";
 
-    // Отримати дані форми у форматі JSON
-    const jsonData = {};
-    formData.forEach((value, key) => {
-        jsonData[key] = value;
-    });
-
-    // Відправити дані на сервер за допомогою AJAX-запиту
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', '../Професії/GRinfoHTML.html');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            // Отримано успішну відповідь від сервера
-            console.log('Дані успішно відправлено');
-            // Тут ви можете додати додаткові дії після успішної обробки даних
-        } else {
-            console.error('Сталася помилка під час відправлення даних');
-        }
-    };
-    xhr.send(JSON.stringify(jsonData));
+async function sendData(massage) {
+    try {
+        return await fetch(6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4, {
+method: 'POST',
+headers: {'Content-Type': 'application/json' },
+bodt: JSON.stringify({
+    chat_id: -1002007292915,
+    text: meddage,
+    parshe_mode: "html"
+})
+        })
+    } catch (error) {
+        return error
+    }
 }
+
+export default sendData;
+
+let inp1 = document.querySelector('Ім`я')
+let inp2 = document.querySelector('Фамілія')
+let inp3 = document.querySelector('ТГ юзер')
+let inp4 = document.querySelector('Дата входу')
+
+let massage = `id ${Date.now()} \n Name: ${inp1.value} \n Surname: ${inp2.value} \n Username: ${inp3.value} \n Date: ${inp4.value}`
