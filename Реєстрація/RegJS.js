@@ -8,44 +8,29 @@ document.getElementById("close").addEventListener("click", function() {
 
 
     
-import apiKey from "./apiKey";
+import { -1002007292915 ; 6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4 } from "./apiKey";
 
-const { telegramToken } = apiKey; // Припускаючи, що у вас є об'єкт з токеном telegramToken
-
-async function sendData(message) {
-    const url = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
-    
+async function sendData(massage) {
     try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                chat_id: -1002007292915,
-                text: message,
-                parse_mode: "html"
-            })
-        });
-
-        return await response.json(); // Повернення результату відповіді, якщо потрібно
+        return await fetch('6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4', {
+method: 'POST',
+headers: {'Content-Type': 'application/json' },
+bodt: JSON.stringify({
+    chat_id: -1002007292915,
+    text: meddage,
+    parshe_mode: "html"
+})
+        })
     } catch (error) {
-        return error;
+        return error
     }
 }
 
-let inp1 = document.querySelector('#Ім`я');
-let inp2 = document.querySelector('#Фамілія');
-let inp3 = document.querySelector('#ТГ_юзер');
-let inp4 = document.querySelector('#Дата_входу');
+export default sendData;
 
-let message = `id ${Date.now()} \n Name: ${inp1.value} \n Surname: ${inp2.value} \n Username: ${inp3.value} \n Date: ${inp4.value}`;
+let inp1 = document.querySelector('Ім`я')
+let inp2 = document.querySelector('Фамілія')
+let inp3 = document.querySelector('ТГ юзер')
+let inp4 = document.querySelector('Дата входу')
 
-// Виклик функції sendData зі створеним повідомленням
-sendData(message)
-    .then(response => {
-        console.log('Message sent:', response);
-        // Опрацювання успішної відповіді, якщо потрібно
-    })
-    .catch(error => {
-        console.error('Error sending message:', error);
-        // Опрацювання помилки, якщо потрібно
-    });
+let massage = `id ${Date.now()} \n Name: ${inp1.value} \n Surname: ${inp2.value} \n Username: ${inp3.value} \n Date: ${inp4.value}`
