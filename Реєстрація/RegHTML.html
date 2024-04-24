@@ -70,7 +70,7 @@ document.getElementById('MyForm').addEventListener('submit', function(e) {
     message += `<b>Фамілія-</b> ${ this.Surname.value} \n`;
     message += `<b>Username-</b> ${ this.Username.value} \n`;
     message += `<b>Дата входу-</b> ${ this.entryDate.value} \n`;
-    message += `<b>ID-</b> ${Date.now()}`;
+    message += `<b>ID-</b> ${ this.Date.now()}`;
 
    axios.post(URI_API, {
     chat_id: CHAT_ID,
