@@ -52,7 +52,7 @@
             <label for="entryDate"></label><p class="dataname">Дата входу до чату:</p><br>
             <input type="date" lang="en" name="entryDate" id="Date" class="vvod" required><br>
 
-          <button type="submit" class="ok" onclick="sendMessage"><i class="fas fa-paper-plane"></i></button>
+          <button type="submit" class="ok"><i class="fas fa-paper-plane"></i></button>
          </div>
         </form>
           
@@ -60,7 +60,7 @@
 
     const TOKEN = "6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4";
 const CHAT_ID = " -1002007292915";
-const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMassege`;
+const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 
 document.getElementById('tg').addEventListener('sumbit', function(e) {
     e.preventDefault();
