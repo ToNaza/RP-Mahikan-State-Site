@@ -1,4 +1,4 @@
-var versionText = 'Preparation for release 5';
+var versionText = 'Preparation for release 6';
 
 function setVersionText() {
     // Отримати елемент <p> для відображення версії
