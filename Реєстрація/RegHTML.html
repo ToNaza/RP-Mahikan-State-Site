@@ -69,8 +69,8 @@ document.getElementById('MyForm').addEventListener('submit', function(e) {
     message += `<b>Ім'я-</b> ${ this.Name.value} \n`;
     message += `<b>Фамілія-</b> ${ this.Surname.value} \n`;
     message += `<b>Username-</b> ${ this.Username.value} \n`;
-    message += `<b>Дата входу-</b> ${ this.entryDate.value} \n`;
-    message += `<b>ID-</b> ${ this.Date.now()}`;
+    message += `<b>Дата входу-</b> ${ this.entryDate.value}`;
+    
 
    axios.post(URI_API, {
     chat_id: CHAT_ID,
