@@ -60,7 +60,7 @@
 
     const TOKEN = "6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4";
 const CHAT_ID = " -1002007292915";
-const URI_API = `https://api.telegram.org/bot${ TOKEN }/senMassege`;
+const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMassege`;
 
 document.getElementById('tg').addEventListener('sumbit', function(e) {
     e.preventDefault();
@@ -80,6 +80,10 @@ document.getElementById('tg').addEventListener('sumbit', function(e) {
 })
 
 </script>
+
+<script defer src="RegJS.js"></script>
+        <script src="../version.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
         </main>
 
@@ -110,9 +114,7 @@ document.getElementById('tg').addEventListener('sumbit', function(e) {
     <p id="versionInfo" style="margin: 10px; position: absolute;"></p>
         </footer>
 
-        <script defer src="RegJS.js"></script>
-        <script src="../version.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        
 
     </body>
 </html>
