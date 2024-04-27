@@ -152,3 +152,38 @@ color: #00bbff;
     text-align: right;
     clear: both; 
 }
+
+
+.post4_t2 {
+    background-color: rgb(160, 160, 160);
+    border-radius: 11px;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.post4_t2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    float: left; /* Залишаємо зображення ліворуч */
+    margin-right: 10px; /* Додаємо відступ справа від зображення */
+}
+
+.text1 {
+    margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
+    font-size: 15px;
+}
+
+
+
+.datapost4 {
+    position: absolute;
+    text-align: right;
+    clear: both; 
+    margin-top: 30px;
+    margin-left: 266px;
+}

@@ -41,7 +41,7 @@ font-size: 40px;
 
 
 .text_info2{
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Jura';
     font-size: 18px;
     margin-bottom: 20px;
@@ -66,4 +66,15 @@ font-size: 40px;
     right: 20px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+b{
+    color:rgb(168, 168, 255);
+}
+
+.rozdil{
+color: rgb(255, 251, 12);
+margin-top: 30px;
+font-size: 20px;
+margin-left: 10px;
 }

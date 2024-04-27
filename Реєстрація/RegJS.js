@@ -9,7 +9,7 @@ document.getElementById("close").addEventListener("click", function() {
 
 import { -1002007292915, 6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4 } from ".apiKey";
 
-anync function sendData(message) {
+async function sendData(message) {
 try {
 return await fetch(6341044419:AAGoMhCmTOlbQMApMfcZzOgNfdAS36d0XP4, {
 metod: 'POST',
