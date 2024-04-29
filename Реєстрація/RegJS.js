@@ -33,6 +33,6 @@ document.getElementById("open").addEventListener("click", function () {
   btnsubmit.addEventListener("click", function (event) {
     event.preventDefault()
   
-    let message = `id: ${Date.now()} \n Name: ${Name.value} \n Surname: ${Surname.value} \n Username: ${Username.value} \n entryDate: ${entryDate.value}`
+    let message = `id: ${Date.now()} \n Ім'я: ${Name.value} \n Фамілія: ${Surname.value} \n Username: ${Username.value} \n Дата входа в чат: ${entryDate.value}`
     sendData(message).then(data => data.json()).then(data => console.log(data))
   })
