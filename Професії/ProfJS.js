@@ -79,6 +79,16 @@ document.getElementById("modSD").classList.remove("open")
                   })
   
 
+                  document.getElementById("open_tGSB").addEventListener("click", function() {
+                    document.getElementById("teachingGSB").classList.add("open")
+                    document.getElementById("modGSB").classList.remove("open")
+                    })
+                   
+    
+                    document.getElementById("closetGSB").addEventListener("click", function() {
+                    document.getElementById("teachingGSB").classList.remove("open")
+                    })
+
 
 
                 /*Відправка в ТГ СД*/ 
@@ -101,14 +111,73 @@ document.getElementById("modSD").classList.remove("open")
                   
                   let id = document.querySelector('#messageInput1')
                  
-                  let btnsubmit = document.querySelector("#SDpost button")
+                  let btnsubmit = document.querySelector("#sentSD")
                   
                  btnsubmit.addEventListener("click", function (event) {
                     event.preventDefault()
                   
-                    let message = `id: ${id.value} \n Запит: ${"Громадянин надіслав  запрос на навчання СД"} }`
+                    let message = `id: ${id.value} \nЗапит: Громадянин надіслав  запит на навчання СД`
                     sendData(message).then(data => data.json()).then(data => console.log(data))
                   })
 
                 /*Закінчення відправки*/
-                /*Початок відправки Ао СБ*/
+                /*Початок відправки Ао СБ*/ 
+
+                async function sendData(message) {
+                  try {
+                    return await fetch(`https://api.telegram.org/bot6987980384:AAFN9kbgCXlHKzCvwZjZN4nPjrMhMG8CPZg/sendMessage`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        chat_id: -1002023426230,
+                        text: message
+                        // parse_mode: "html"
+                      }),
+                    })
+                  } catch (error) {
+                    return error
+                  }
+                }
+                
+                let id1 = document.querySelector('#messageInput2')
+               
+                let btnsubmit1 = document.querySelector("#sentAoSB")
+                
+               btnsubmit1.addEventListener("click", function (event) {
+                  event.preventDefault()
+                
+                  let message = `id: ${id1.value} \nЗапит: Громадянин надіслав  запит на навчання Ао СБ`
+                  sendData(message).then(data => data.json()).then(data => console.log(data))
+               })
+                   /*Закінчення відправки Ао СБ*/
+
+                   /*початок ГСБ*/ 
+                   
+                   async function sendData(message) {
+                    try {
+                      return await fetch(`https://api.telegram.org/bot6987980384:AAFN9kbgCXlHKzCvwZjZN4nPjrMhMG8CPZg/sendMessage`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          chat_id: -1002023426230,
+                          text: message
+                          // parse_mode: "html"
+                        }),
+                      })
+                    } catch (error) {
+                      return error
+                    }
+                  }
+                  
+                  let id2 = document.querySelector('#messageInput3')
+                 
+                  let btnsubmit2 = document.querySelector("#sentGSB")
+                  
+                 btnsubmit2.addEventListener("click", function (event) {
+                    event.preventDefault()
+                  
+                    let message = `id: ${id2.value} \nЗапит: Громадянин надіслав  запит на навчання ГСБ`
+                    sendData(message).then(data => data.json()).then(data => console.log(data))
+                  })
+
+                   /*Закінчення ГСБ*/

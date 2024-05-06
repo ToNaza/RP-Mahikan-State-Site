@@ -114,7 +114,7 @@ color: #00bbff;
 }
 
 .datapost2 {
-    margin-top: 30px;
+    margin-top: 48px;
     text-align: right;
     clear: both; 
 }
@@ -144,11 +144,12 @@ color: #00bbff;
     position: absolute;
     top: 125px;
     left: 5px;
-   font-size: 13px;
+   font-size: 14px;
+   margin-top: 10px;
 }
 
 .datapost3 {
-    margin-top: -120px;
+    margin-top: -125px;
     text-align: right;
     clear: both; 
 }
@@ -184,6 +185,27 @@ color: #00bbff;
     position: absolute;
     text-align: right;
     clear: both; 
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 266px;
+}
+
+
+
+.post5_t1{
+    background-color: rgb(160, 160, 160);
+    border-radius: 11px;
+    width: 350px;
+    height: 130px;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 15px;
+
+    p{
+        font-size: 16px;
+    }
+
+    .datapost5{
+        margin-top: 25px;
+        text-align: right;
+    }
 }

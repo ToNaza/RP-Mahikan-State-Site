@@ -11,6 +11,7 @@
     
         <script defer src="KOSJS.js"></script>
         <script src="../version.js" defer></script>
+        <script src="https://kit.fontawesome.com/bfec730d56.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -63,7 +64,7 @@
     Потрібно знати Конституцію та Закони <br>
      держави, здати екзамени, мінімальний <br>
      бал 90%.</p>
-    <button class="mes4">Надіслати запит на навчання</button> <br>
+    <button class="mes4" id="open_tSUD">Надіслати запит на навчання</button> <br>
     <button class="close4" id="closeSYD">Назад</button>
     </div>
     </div>
@@ -98,10 +99,60 @@
     Закони, вивчати всі напрямки освіти (це <br>
     можна робити прямо під час того як вас <br>
     приймуть), здати іспити на бал 100%.</p>
-    <button class="mes5">Надіслати запит на навчання</button> <br>
+    <button class="mes5" id="open_tNav">Надіслати запит на навчання</button> <br>
     <button class="close5" id="closeNav">Назад</button>
     </div>
     </div>
+
+
+
+<!-- Початок коду Модульних вікон -->
+
+<div class="teachingSYD" id="teachingSYD">
+    <div class="T_BoxSYD">
+
+        <h2>Ви вибрали посягу: (Судову К.О.С.)</h2>
+
+        <p>
+            Ви натиснули на інлайд <br>
+            кнопку, будь ласка впишіть <br>
+            ваші данні знизу що б ми <br>
+            могли з вами зв’язатися.
+        </p>
+        <form id="">
+        <input type="text" name="id" class="butT_SYD" id="messageInput1" placeholder="Ваш паспортний ID">
+        </form>
+        <p>Протягом дня вам напише адмін <br> К.О.С. зі званням Преподаватель</p>
+
+        <button type="submit" class="sentSYD" id="sentSYD"> <i class="fas fa-paper-plane"></i> </button>
+        <button class="closeT_SYD" id="closettSYD">Назад</button>
+    </div>
+</div>
+
+<!--Нижче модульне вікно Ао СБ-->
+
+<div class="teachingNav" id="teachingNav">
+    <div class="T_BoxNav">
+
+        <h2>Ви вибрали посягу: (Освітню К.О.С.)</h2>
+
+        <p>
+            Ви натиснули на інлайд <br>
+            кнопку, будь ласка впишіть <br>
+            ваші данні знизу що б ми <br>
+            могли з вами зв’язатися.
+        </p>
+        <form id="">
+        <input type="text" class="butT_Nav" id="messageInput2" placeholder="Ваш паспортний ID">
+        </form>
+        <p>Протягом дня вам напише адмін <br> К.О.С. зі званням Преподаватель</p>
+
+        <button type="submit" class="sentNav" id="sentNav"> <i class="fas fa-paper-plane"></i> </button>
+        <button class="closeT_Nav" id="closettNav">Назад</button>
+    </div>
+</div>
+
+<!--Закінчення коду модульних вікон-->
 
 
         </main>
