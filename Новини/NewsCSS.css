@@ -67,7 +67,7 @@ color: #00bbff;
     background-color: rgb(160, 160, 160);
     border-radius: 11px;
     width: 350px;
-    height: 130px;
+    height: 100%;
     margin: 10px;
     padding: 5px;
     margin-left: 15px;
@@ -86,7 +86,7 @@ color: #00bbff;
     background-color: rgb(160, 160, 160);
     border-radius: 11px;
     width: 350px;
-    height: 185px;
+    height: 100%;
     margin: 10px;
     padding: 5px;
     margin-left: 15px;
@@ -188,13 +188,11 @@ color: #00bbff;
     margin-left: 266px;
 }
 
-
-
 .post5_t1{
     background-color: rgb(160, 160, 160);
     border-radius: 11px;
     width: 350px;
-    height: 130px;
+    height: 100%;
     margin: 10px;
     padding: 5px;
     margin-left: 15px;
