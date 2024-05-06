@@ -38,21 +38,22 @@
             Якщо вам нічого не прийшло напишіть<br>
              це в ту ж службу (Службу допомоги)<br>
         </p>
+        <p style="color: rgb(55, 232, 255); font-size: 14px; text-align: center;">Увага! спочатку введіть дату а потім іншу інформацію</p>
         <form name="submit-to-google-sheet" id="MyForm">
             <div class="osnova">
             <label for="Name" ></label><br>
-            <input type="text" name="Name" id="Name" class="vvod"  placeholder="Введіть своє ім'я" required><br>
+            <input type="text" name="Name" id="Name" onkeyup="checkInputs()" class="vvod"  placeholder="Введіть своє ім'я" required><br>
 
             <label for="Surname" ></label><br>
-            <input type="text" name="Surname" id="Surname" class="vvod"  placeholder="Видумайте собі фамілію" required><br>
+            <input type="text" name="Surname" id="Surname" onkeyup="checkInputs()" class="vvod"  placeholder="Видумайте собі фамілію" required><br>
 
             <label for="Username" ></label><br>
-            <input type="text" name="Username" id="Username" class="vvod"  placeholder="Введіть ваш Tg Usetname " required><br>
+            <input type="text" name="Username" id="Username" onkeyup="checkInputs()" class="vvod"  placeholder="Введіть ваш Tg Usetname " required><br>
 
             <label for="entryDate"></label><p class="dataname">Дата входу до чату:</p><br>
-            <input type="date" lang="en" name="entryDate" id="Date" class="vvod" required><br>
+            <input type="date" lang="en" name="entryDate" id="Date" onkeyup="checkInputs()" class="vvod" required><br>
 
-          <button type="submit" class="ok"><i class="fas fa-paper-plane"></i></button>
+          <button type="submit" class="ok" id="okO" value="Submit" disabled ><i class="fas fa-paper-plane"></i></button>
          </div>
         </form>
           
@@ -66,14 +67,14 @@
 
         <footer style="margin-top: 30px;">
 <button class="Exid" onclick="location.href='../index.html'"> На головну</button>
-<button class="open_button"><p class="open" id="open">Для Адмінів</p></button>
+<button class="open_button"><p class="open" id="open">Консоль</p></button>
 
 
 <div class="modul" id="modul">
     <div class="modul_box">
 
 
-        <h2>Введіть пароль</h2>
+        <h2>Консоль розробника</h2>
         <input type="password" id="passwordInput" class="input" placeholder="Enter password" required>
         
     

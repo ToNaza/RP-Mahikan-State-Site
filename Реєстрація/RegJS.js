@@ -36,3 +36,22 @@ document.getElementById("open").addEventListener("click", function () {
     let message = `id: ${Date.now()} \n Ім'я: ${Name.value} \n Фамілія: ${Surname.value} \n Username: ${Username.value} \n Дата входа в чат: ${entryDate.value}`
     sendData(message).then(data => data.json()).then(data => console.log(data))
   })
+
+
+  function checkInputs() {
+    // Отримуємо значення полів вводу
+    var name = document.getElementById('Name').value;
+    var surname = document.getElementById('Surname').value;
+    var username = document.getElementById('Username').value;
+    var date = document.getElementById('Date').value;
+    
+
+    // Перевіряємо, чи всі поля вводу заповнені
+    if (name.trim() !== '' && surname.trim() !== '' && username.trim() !== '' && date.trim() !== '') {
+        // Активуємо кнопку з типом "submit"
+        document.getElementById('okO').disabled = false;
+    } else {
+        // Деактивуємо кнопку з типом "submit"
+        document.getElementById('okO').disabled = true;
+    }
+}

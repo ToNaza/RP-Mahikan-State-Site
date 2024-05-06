@@ -104,3 +104,4 @@ document.getElementById("modSYD").classList.remove("open")
               })
 
                /*Закінчення К.О.С. Освітня*/
+
