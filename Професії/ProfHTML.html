@@ -94,7 +94,7 @@
     Бажано знати конституцію, Обовязково  <br>
     |знати Адміністративний та Кримінальний <br>
      кодекс, здати тест не менше 75% балів. </p>
-    <button class="mes1">Надіслати запит на навчання</button> <br>
+    <button class="mes1" id="open_tAoSB">Надіслати запит на навчання</button> <br>
     <button class="close1" id="closeAoSB">Назад</button>
     </div>
     </div>
@@ -149,7 +149,7 @@
     </div>
 
 
-
+<!-- Початок коду Модульних вікон -->
 
 <div class="teachingSD" id="teachingSD">
     <div class="T_BoxSD">
@@ -162,16 +162,40 @@
             ваші данні знизу що б ми <br>
             могли з вами зв’язатися.
         </p>
-        
-        <input type="text" class="butT_SD" id="messageInput" placeholder="Ваш паспортний ID">
-
+        <form id="SDpost">
+        <input type="text" name="id" class="butT_SD" id="messageInput1" placeholder="Ваш паспортний ID">
+        </form>
         <p>Протягом дня вам напише адмін <br> К.О.С. зі званням Преподаватель</p>
 
-        <button onclick="sendMessage()" class="sentSD"> <i class="fas fa-paper-plane"></i> </button>
+        <button type="submit" class="sentSD" id="sentSD"> <i class="fas fa-paper-plane"></i> </button>
         <button class="closeT_SD" id="closetSD">Назад</button>
     </div>
 </div>
 
+<!--Нижче модульне вікно Ао СБ-->
+
+<div class="teachingAoSB" id="teachingAoSB">
+    <div class="T_BoxAoSB">
+
+        <h2>Ви вибрали посягу: (Ао СБ)</h2>
+
+        <p>
+            Ви натиснули на інлайд <br>
+            кнопку, будь ласка впишіть <br>
+            ваші данні знизу що б ми <br>
+            могли з вами зв’язатися.
+        </p>
+        <form id="">
+        <input type="text" class="butT_AoSB" id="messageInput2" placeholder="Ваш паспортний ID">
+        </form>
+        <p>Протягом дня вам напише адмін <br> К.О.С. зі званням Преподаватель</p>
+
+        <button type="submit" class="sentAoSB" id="sentAoSB"> <i class="fas fa-paper-plane"></i> </button>
+        <button class="closeT_AoSB" id="closetAoSB">Назад</button>
+    </div>
+</div>
+
+<!--Закінчення коду модульних вікон-->
         </main>
 
         <footer style="margin-top: 30px;">

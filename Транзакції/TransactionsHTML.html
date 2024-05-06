@@ -1,0 +1,58 @@
+<html>
+    <head> <title> Transactions</title> </head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../media/ava site.jpg">
+    <link rel="stylesheet" href="TransactionsCSS.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <script src="TransactionsJS.js" defer></script>
+    <script src="version.js" defer></script>
+
+    <body>
+        <header>
+            <div class="name_site_ops">
+           <p class="name_site"> Bank transactions </p>
+           </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <main>
+    <div class="fon">
+        <div class="position">
+            <form id="RpBankTransactions">
+                <label for="Впишіть свій id паспорут"></label><p class="pasportid1">Впишіть свій id паспорут</p><br>
+            <input type="text" name="YouID" id="YouID" class="YouID" placeholder="Впишіть ID код" required><br>
+
+            <label for="ID на який надсилаєте"></label><p class="pasportid2">ID на який надсилаєте</p><br>
+            <input type="text" name="HimID" id="HimID" class="HimID" placeholder="Впишіть ID код" required><br>
+
+            <label for="Впишіть суму транзакції"></label><p class="sum">Впишіть суму транзакції</p><br>
+            <input type="text" name="Sum" id="Sum" class="Sum2" placeholder="Сума" required><br>
+
+            <button type="submit" class="Transactions" id="openTransactionsOK"> Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="TransactionsOK" id="TransactionsOK">
+        <div class="T_TransactionsOK" id="T_TransactionsOK">
+            <h2>Транзакція успішна</h2>
+            <p>Операція пройшла успішно, протягом пару хвилин ваші кошти мають надійти до отримувача, якщо цього не трапилось повідомьте в Службу Допомоги</p>
+            <button class="Exid2" id="closeTransactionsOK">Назад</button>
+        </div>
+    </div>
+        </main>
+
+        <footer style="margin-top: 30px;">
+            <button class="Exid" onclick="location.href='../index.html'"> На головну</button>
+
+            <p id="versionInfo" style="margin: 10px;  text-align: right;"></p>
+        </footer>
+
+    </body>
+</html>

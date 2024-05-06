@@ -68,9 +68,47 @@ document.getElementById("modSD").classList.remove("open")
                 document.getElementById("teachingSD").classList.remove("open")
                 })
 
+                document.getElementById("open_tAoSB").addEventListener("click", function() {
+                  document.getElementById("teachingAoSB").classList.add("open")
+                  document.getElementById("modAoSB").classList.remove("open")
+                  })
+                 
+  
+                  document.getElementById("closetAoSB").addEventListener("click", function() {
+                  document.getElementById("teachingAoSB").classList.remove("open")
+                  })
+  
+
+
 
                 /*Відправка в ТГ СД*/ 
 
+                async function sendData(message) {
+                    try {
+                      return await fetch(`https://api.telegram.org/bot6987980384:AAFN9kbgCXlHKzCvwZjZN4nPjrMhMG8CPZg/sendMessage`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          chat_id: -1002023426230,
+                          text: message
+                          // parse_mode: "html"
+                        }),
+                      })
+                    } catch (error) {
+                      return error
+                    }
+                  }
+                  
+                  let id = document.querySelector('#messageInput1')
+                 
+                  let btnsubmit = document.querySelector("#SDpost button")
+                  
+                 btnsubmit.addEventListener("click", function (event) {
+                    event.preventDefault()
+                  
+                    let message = `id: ${id.value} \n Запит: ${"Громадянин надіслав  запрос на навчання СД"} }`
+                    sendData(message).then(data => data.json()).then(data => console.log(data))
+                  })
 
                 /*Закінчення відправки*/
                 /*Початок відправки Ао СБ*/

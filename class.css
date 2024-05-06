@@ -44,7 +44,7 @@ margin-top: 10px;
     padding: 20px;
 }
 
-button{
+/* button{
     text-align: center;
     color:black;
     background-color: C1C1C1 ;
@@ -54,7 +54,90 @@ button{
     border-radius: 15px;
     margin-top: 20px;
 }
+*/
 
 .central{
     text-align: center;
+}
+
+.N1{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+.N2{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.N3{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 335px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 7px;
+
+}
+
+.N6{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.N7{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.N4{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 335px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 7px;
+}
+
+.N5{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 335px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 7px;
 }
