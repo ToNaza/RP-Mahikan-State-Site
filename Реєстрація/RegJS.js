@@ -5,6 +5,8 @@ document.getElementById("open").addEventListener("click", function () {
   document.getElementById("close").addEventListener("click", function () {
     document.getElementById("modul").classList.remove("open");
   });
+
+
   
   
   async function sendData(message) {
@@ -26,6 +28,7 @@ document.getElementById("open").addEventListener("click", function () {
   let Name = document.querySelector('#Name')
   let Surname = document.querySelector('#Surname')
   let Username = document.querySelector('#Username')
+  let email = document.querySelector('#email ')
   let entryDate = document.querySelector('#Date ')
   
   let btnsubmit = document.querySelector("#MyForm button")
@@ -33,10 +36,9 @@ document.getElementById("open").addEventListener("click", function () {
   btnsubmit.addEventListener("click", function (event) {
     event.preventDefault()
   
-    let message = `id: ${Date.now()} \n Ім'я: ${Name.value} \n Фамілія: ${Surname.value} \n Username: ${Username.value} \n Дата входа в чат: ${entryDate.value}`
+    let message = ` id: 1.${ Date.now()} \n Ім'я: ${Name.value} \n Фамілія: ${Surname.value} \n Username: ${Username.value} \n Email: ${email.value} \n Дата входа в чат: ${entryDate.value}`
     sendData(message).then(data => data.json()).then(data => console.log(data))
   })
-
 
   function checkInputs() {
     // Отримуємо значення полів вводу
@@ -54,4 +56,29 @@ document.getElementById("open").addEventListener("click", function () {
         // Деактивуємо кнопку з типом "submit"
         document.getElementById('okO').disabled = true;
     }
+}
+
+
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+function openPopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "block";
+  setTimeout(function(){
+    popup.classList.add("open"); // Додаємо клас для відкриття вспливаючого вікна
+  }, 100);
+}
+
+function closePopup() {
+  var popup = document.getElementById("popup");
+  popup.classList.remove("open"); // Видаляємо клас для відкриття вспливаючого вікна
+  setTimeout(function(){
+    popup.style.display = "none";
+  }, 500); // Після закриття вікна, ховаємо його через 0.5 секунди
 }

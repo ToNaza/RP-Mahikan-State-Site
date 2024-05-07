@@ -1,4 +1,4 @@
-var versionText = '1.1/0';
+var versionText = '1.1/1';
 
 function setVersionText() {
     // Отримати елемент <p> для відображення версії
