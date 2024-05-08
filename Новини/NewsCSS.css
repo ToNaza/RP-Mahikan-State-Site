@@ -63,147 +63,109 @@ color: #00bbff;
     margin-left: 25px;
 }
 
-.post1_t1{
-    background-color: rgb(160, 160, 160);
-    border-radius: 11px;
-    width: 350px;
-    height: 100%;
-    margin: 10px;
+.news_baza{
+    text-align: center;
+}
+
+.news1_t1{
+    background-color: rgb(154, 154, 154);
+    width: 340px;
+    height: auto;
+    border-radius: 13px;
     padding: 5px;
-    margin-left: 15px;
+    margin: 5px;
+   display: inline-block;
 
     p{
-        font-size: 16px;
+        font-size: 15px;
+        text-align: left;
     }
 
-    .datapost1{
-        margin-top: 7px;
-        text-align: right;
+    .datepost{
+    padding-left: 260px;
     }
 }
 
-.post2_t2 {
-    background-color: rgb(160, 160, 160);
-    border-radius: 11px;
-    width: 350px;
-    height: 100%;
-    margin: 10px;
-    padding: 5px;
-    margin-left: 15px;
-    position: relative;
-}
 
-.post2_t2 img {
-    max-width: 100%;
+.news2_t1{
+    background-color: rgb(154, 154, 154);
+    width: 340px;
     height: auto;
-    display: block;
-    float: left; /* Залишаємо зображення ліворуч */
-    margin-right: 10px; /* Додаємо відступ справа від зображення */
-}
-
-.text1 {
-    margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
-    font-size: 15px;
-}
-
-.text2 {
-    position: absolute;
-    top: 125px;
-    left: 5px;
-   font-size: 15px;
-}
-
-.datapost2 {
-    margin-top: 30px;
-    text-align: right;
-    clear: both; 
-}
-
-.post3_t2 {
-    background-color: rgb(122, 128, 156);
-    border-radius: 11px;
-    width: 350px;
-    height: 217px;
-    margin: 10px;
+    border-radius: 13px;
     padding: 5px;
-    margin-left: 15px;
-    position: relative;
-}
-
-.post3_t2 img {
-   width: 190px;
-    height: auto;
-}
-
-.text1 {
-    margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
-    font-size: 13px;
-}
-
-.text2 {
-    position: absolute;
-    top: 125px;
-    left: 5px;
-   font-size: 13px;
-   margin-top: 20px;
-}
-
-.datapost3 {
-    margin-top: -130px;
-    text-align: right;
-    clear: both; 
-}
-
-
-.post4_t2 {
-    background-color: rgb(160, 160, 160);
-    border-radius: 11px;
-    width: 350px;
-    height: 190px;
-    margin: 10px;
-    padding: 5px;
-    margin-left: 15px;
-    position: relative;
-}
-
-.post4_t2 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    float: left; /* Залишаємо зображення ліворуч */
-    margin-right: 10px; /* Додаємо відступ справа від зображення */
-}
-
-.text1 {
-    margin-top: 0; /* Скидаємо верхній відступ (якщо є) */
-    font-size: 15px;
-}
-
-
-
-.datapost4 {
-    position: absolute;
-    text-align: right;
-    clear: both; 
-    margin-top: 30px;
-    margin-left: 256px;
-}
-
-.post5_t1{
-    background-color: rgb(160, 160, 160);
-    border-radius: 11px;
-    width: 350px;
-    height: 100%;
-    margin: 10px;
-    padding: 5px;
-    margin-left: 15px;
+    margin: 5px;
+   display: inline-block;
 
     p{
-        font-size: 16px;
+        font-size: 15px;
+        text-align: left;
     }
 
-    .datapost5{
-        margin-top: 25px;
-        text-align: right;
+    a{
+        font-size: 14px ;
+        color: rgb(104, 255, 167);
+        text-decoration: none;
+    }
+
+    .datepost{
+    padding-left: 260px;
     }
 }
+
+.news3_t3{
+    background-color: rgb(154, 154, 154);
+    width: 340px;
+    height: auto;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 5px;
+   display: inline-block;
+
+    p{
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .openpost{
+        width: 20px;
+        height: 16px;
+        font-size: 10px;
+        padding-bottom: 15px;
+
+        position: absolute;
+        margin-left: 70px;
+    }
+
+    .datepost{
+    padding-left: 260px;
+    }
+
+    
+}
+
+
+.newsopenpost3{
+    background-color: rgb(154, 154, 154);
+    width: 340px;
+    height: auto;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+
+    transform: scale(0);
+    transition: transform .6s ;
+    
+ display: none;
+}
+
+.closepost3{
+    width: 20px;
+        height: 16px;
+        font-size: 10px;
+        padding-bottom: 15px;
+
+        position: absolute;
+        margin-left: 70px;
+}
+
