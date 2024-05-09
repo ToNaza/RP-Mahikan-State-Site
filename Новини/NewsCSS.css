@@ -127,13 +127,13 @@ color: #00bbff;
     }
 
     .openpost{
-        width: 20px;
+        width: 70px;
         height: 16px;
         font-size: 10px;
         padding-bottom: 15px;
-
+        border-radius: 6px;
         position: absolute;
-        margin-left: 70px;
+        margin-left: 15px;
     }
 
     .datepost{
@@ -144,28 +144,67 @@ color: #00bbff;
 }
 
 
+
 .newsopenpost3{
-    background-color: rgb(154, 154, 154);
-    width: 340px;
-    height: auto;
-    border-radius: 13px;
-    padding: 5px;
-    margin: 5px;
-    display: inline-block;
-
-    transform: scale(0);
-    transition: transform .6s ;
-    
- display: none;
-}
-
-.closepost3{
-    width: 20px;
-        height: 16px;
-        font-size: 10px;
-        padding-bottom: 15px;
-
-        position: absolute;
-        margin-left: 70px;
-}
-
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+  background-color: rgba(0,0,0, .3);
+  display:grid;
+  align-items: center;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s, visibility .4s;
+  }
+  
+  .newsopenpost3_box{
+  width: 350px;
+  padding: 15px;
+  height: auto;
+  z-index: 1;
+  background-color: white;
+  font-family: 'Jura';
+  background-color: EFEFEF;
+  border-radius: 18px;
+  font-size: 16px;
+  margin: auto;
+  
+  -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+  -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+  box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
+  
+  transform: scale(0);
+  transition: transform .6s ;
+  
+  p{
+  margin-top: 20px;
+  }
+  
+  .closepost3{
+  background-color: rgb(220, 220, 220);
+  width: 110px;
+  height: 29px;
+  margin-top: 15px;
+  border: 0px;
+  border-radius: 8px;
+  margin-left: 215px;
+  
+  border: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тінь: зміщення по X, Y, розмір розмиття, колір */
+      cursor: pointer;
+  }
+  }
+  
+  .newsopenpost3.open{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .newsopenpost3.open .newsopenpost3_box{
+    transform: scale(1);
+  }
