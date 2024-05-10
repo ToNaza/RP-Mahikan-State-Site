@@ -1,4 +1,4 @@
-var versionText = '1.1/5';
+var versionText = '1.2/0';
 
 function setVersionText() {
     // Отримати елемент <p> для відображення версії
@@ -27,10 +27,14 @@ function checkPassword() {
         window.location.href = '../Громадяни/GRinfoHTML.html';
     } else if (passwordInput === '123456') {
         // Показ картинки на 2 секунди
-        showImageForTwoSeconds('https://img2.joyreactor.cc/pics/post/Voices-Of-The-Void-%D0%98%D0%B3%D1%80%D1%8B-Arirals-8342149.png', 200);
+        showImageForTwoSeconds();
     } else if (passwordInput === 'Argemia.pls1724K13B1M84im3') {
-        // Показ картинки на 2 секунди
-        showImageForTwoSeconds('https://img2.joyreactor.cc/pics/post/Voices-Of-The-Void-%D0%98%D0%B3%D1%80%D1%8B-Arirals-8342149.png', 200);
+        // Показ картинки та потім її приховування через 2 секунди
+        const bonys = document.getElementById('bonys');
+        bonys.classList.remove('hidden');
+        setTimeout(function() {
+            bonys.classList.add('hidden');
+        }, 2000);
     } else if (passwordInput === 'Admit226317') {
         // Відкриття посилання 1
         window.open('https://t.me/+BCo7JhGt_L05YWUy');

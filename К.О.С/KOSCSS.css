@@ -44,10 +44,10 @@ font-size: 30px;
     color: white;
     font-family: 'Jura';
     font-size: 18px;
-    text-align: left; 
+    text-align: center; 
     padding: 20px;
     margin-top: -25px;
-    margin-bottom: -25px;
+
 }
 
 .Exid{
@@ -80,8 +80,9 @@ font-size: 30px;
     height: 115px ;
     background-color: 828282;
     border-radius: 14px;
-    margin: 15px;
-    margin-top: -9px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Jura';
 
  img{
@@ -116,7 +117,7 @@ font-size: 30px;
     height: 100px ;
     background-color: ABABAB;
     border-radius: 14px;
-    margin: 17px;
+    margin: auto;
     font-family: 'Jura';
 
 img{
@@ -143,7 +144,8 @@ img{
     height: 100px ;
     background-color: ABABAB;
     border-radius: 14px;
-    margin: 17px;
+    margin: auto;
+    margin-top: 17px;
     font-family: 'Jura';
 
 img{
@@ -194,7 +196,7 @@ img{
   background-color: EFEFEF;
   border-radius: 18px;
   font-size: 16px;
-  margin-left: 20px;
+  margin: auto;
   
   -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
   -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
@@ -280,7 +282,7 @@ img{
   background-color: EFEFEF;
   border-radius: 18px;
   font-size: 16px;
-  margin-left: 20px;
+  margin: auto;
   
   -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
   -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
@@ -370,7 +372,7 @@ font-family: 'Jura';
 background-color: A9A9A9;
 border-radius: 18px;
 font-size: 16px;
-margin-left: 20px;
+margin: auto;
 
 -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
 -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
@@ -466,7 +468,7 @@ font-family: 'Jura';
 background-color: A9A9A9;
 border-radius: 18px;
 font-size: 16px;
-margin-left: 20px;
+margin: auto;
 
 -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
 -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);

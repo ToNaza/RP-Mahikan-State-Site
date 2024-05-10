@@ -82,3 +82,4 @@ function closePopup() {
     popup.style.display = "none";
   }, 500); // Після закриття вікна, ховаємо його через 0.5 секунди
 }
+
