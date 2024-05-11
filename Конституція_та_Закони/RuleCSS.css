@@ -29,29 +29,6 @@ font-size: 40px;
     margin-bottom: 20px;
 }
 
-.text_info{
-    color: white;
-    font-family: 'Jura';
-    font-size: 18px;
-    margin-bottom: 20px;
-
-    text-align: left; 
-    padding: 20px;
-}
-
-
-.text_info2{
-    color: rgb(255, 255, 255);
-    font-family: 'Jura';
-    font-size: 18px;
-    margin-bottom: 20px;
-    margin-top: -40px;
-    text-align: left; 
-    padding: 20px;
-
-
-}
-
 .Exid{
     border: 0px;
     border-radius: 8px;
@@ -72,9 +49,64 @@ b{
     color:rgb(168, 168, 255);
 }
 
+.glow{
+    color: rgb(123, 123, 255);
+}
+
 .rozdil{
 color: rgb(255, 251, 12);
 margin-top: 30px;
+font-size: 25px;
+margin: auto;
+}
+
+.active {
+    background-color: rgb(138, 138, 138);
+}
+
+.text{
 font-size: 20px;
-margin-left: 10px;
+font-family: 'Jura';
+}
+
+
+#versionInfo{
+    font-size: 18px;
+    font-family: 'Jura';
+    color: white;
+}
+
+
+.Vaz{
+    width: 360px;
+    height: 30px;
+    padding: 2px;
+    position: absolute;
+
+}
+
+.mainKon{
+button{
+    font-size: 12px;
+    position: absolute;
+    margin: 5px;
+}
+}
+
+.mainAdK{
+    button{
+        font-size: 12px;
+        position: absolute;
+        margin: 5px;
+        margin-left: 75px;
+    } 
+}
+
+.mainKrK{
+    button{
+        font-size: 12px;
+        position: absolute;
+        margin: 5px;
+        margin-left: 218px;
+    }  
 }
