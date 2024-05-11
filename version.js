@@ -1,4 +1,4 @@
-var versionText = '1.4/1';
+var versionText = '1.4/2';
 
 function setVersionText() {
     // Отримати елемент <p> для відображення версії
@@ -62,3 +62,10 @@ function showImageForTwoSeconds(imageUrl, width) {
         document.body.removeChild(imageElement);
     }, 2000);
 }
+
+
+
+
+
+
+
