@@ -25,14 +25,17 @@
     <div class="fon">
         <div class="position">
             <form id="RpBankTransactions">
-                <label for="Впишіть свій id паспорут"></label><p class="pasportid1">Впишіть свій id паспорут</p><br>
-            <input type="number" name="YouID" id="YouID" onkeyup="checkInputs()" class="YouID" placeholder="Впишіть ID код" required><br>
+                <label for="Впишіть свій id паспорут"></label><p class="pasportid1">Впишіть свій id паспорут або компанію що робить транзакцію</p><br>
+            <input type="text" name="YouID" id="YouID" onkeyup="checkInputs()" class="YouID" placeholder="Впишіть ID код" required><br>
 
             <label for="ID на який надсилаєте"></label><p class="pasportid2">ID на який надсилаєте</p><br>
             <input type="number" name="HimID" id="HimID" onkeyup="checkInputs()" class="HimID" placeholder="Впишіть ID код" required><br>
 
             <label for="Впишіть суму транзакції"></label><p class="sum">Впишіть суму транзакції</p><br>
             <input type="number" name="Sum" id="Sum" onkeyup="checkInputs()" class="Sum2" placeholder="Сума" required><br>
+
+            <label for="Тема переказу"></label><p class="sum"> Яка тема переказу</p><br>
+            <input type="text" name="tem" id="tem" onkeyup="checkInputs()" class="Sum2" placeholder=""><br>
 
             <button type="submit" class="Transactions" id="openTransactionsOK"  value="Submit" disabled> Надіслати</button>
             </form>

@@ -19,13 +19,14 @@ async function sendData(message) {
   let YouID = document.querySelector('#YouID')
   let HimID = document.querySelector('#HimID')
   let Sum = document.querySelector('#Sum')
+  let tem = document.querySelector('#tem')
   
   let btnsubmit = document.querySelector("#RpBankTransactions button")
   
   btnsubmit.addEventListener("click", function (event) {
     event.preventDefault()
   
-    let message = `id відправника: ${YouID.value} \nid отримувача: ${HimID.value} \nСума переказу: ${Sum.value} `
+    let message = `Відправник: ${YouID.value} \nid отримувача: ${HimID.value} \nСума переказу: ${Sum.value} Бон💵 \nТема: ${tem.value} `
     sendData(message).then(data => data.json()).then(data => console.log(data))
   })
 
@@ -45,6 +46,7 @@ async function sendData(message) {
             var youID = document.getElementById('YouID').value;
             var himID = document.getElementById('HimID').value;
             var sum = document.getElementById('Sum').value;
+            var tem = document.getElementById('tem').value;
 
             // Перевіряємо, чи всі поля вводу заповнені
             if (youID.trim() !== '' && himID.trim() !== '' && sum.trim() !== '') {

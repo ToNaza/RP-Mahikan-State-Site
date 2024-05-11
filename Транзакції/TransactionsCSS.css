@@ -101,7 +101,7 @@ background: linear-gradient(173deg, rgba(22,22,30,1) 1%, rgba(42,42,50,1) 42%, r
     .fon{
         background-color: rgba(0, 0, 0, 0.434);
         width: 310px;
-        height: 340px;
+        height: 395px;
         text-align: center;
         padding-top: 20px;
         border-radius: 18px;
@@ -139,7 +139,7 @@ background: linear-gradient(173deg, rgba(22,22,30,1) 1%, rgba(42,42,50,1) 42%, r
       background-color: A9A9A9;
       border-radius: 18px;
       font-size: 16px;
-      margin-left: 20px;
+      margin: auto;
       
       -webkit-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
       -moz-box-shadow: 5px 5px 11px 17px rgba(0,0,0,0.16);
