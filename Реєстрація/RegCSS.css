@@ -261,3 +261,20 @@ margin-left: 4px;
   margin-top: -250px;
   
 }
+
+
+
+#hiddenDiv {
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+#bonys.hidden {
+  display: none;
+}

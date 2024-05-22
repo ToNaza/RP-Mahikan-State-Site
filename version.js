@@ -1,4 +1,4 @@
-var versionText = '1.5/0';
+var versionText = '1.5/1';
 
 function setVersionText() {
     // Отримати елемент <p> для відображення версії
@@ -14,12 +14,24 @@ function setVersionText() {
 // Викликати функцію setVersionText() після завантаження сторінки
 window.addEventListener('load', setVersionText);
 
+document.getElementById("open").addEventListener("click", function () {
+    document.getElementById("modul").classList.add("open");
+});
 
+document.getElementById("close").addEventListener("click", function () {
+    document.getElementById("modul").classList.remove("open");
+});
+
+function closeModal() {
+    document.getElementById("modul").classList.remove("open");
+}
 
 function checkPassword() {
     const passwordInput = document.getElementById('passwordInput').value;
     const errorMessageModal = document.getElementById('errorMessageModal');
     const errorMessage = document.getElementById('errorMessage');
+
+    closeModal(); // Закриття модального вікна перед перевіркою пароля
 
     // Перевірка правильності пароля
     if (passwordInput === '22814') {
@@ -27,7 +39,7 @@ function checkPassword() {
         window.location.href = '../Громадяни/GRinfoHTML.html';
     } else if (passwordInput === '123456') {
         // Показ картинки на 2 секунди
-        showImageForTwoSeconds();
+        showImageForTwoSeconds('path-to-your-image.jpg', 200);
     } else if (passwordInput === 'Argemia.pls1724K13B1M84im3') {
         // Показ картинки та потім її приховування через 2 секунди
         const bonys = document.getElementById('bonys');
@@ -41,6 +53,9 @@ function checkPassword() {
     } else if (passwordInput === 'KOS843211') {
         // Відкриття посилання 2
         window.open('https://t.me/+li3tkW0GhFwzOTRi');
+    } else if (passwordInput === 'pizza') {
+        // Показ div та відтворення музики на 3 секунди
+        showDivAndPlayMusic();
     } else {
         // Показ повідомлення про помилку
         errorMessage.textContent = 'Неправильний пароль, спробуйте ще раз';
@@ -63,9 +78,19 @@ function showImageForTwoSeconds(imageUrl, width) {
     }, 2000);
 }
 
+function showDivAndPlayMusic() {
+    const hiddenDiv = document.getElementById('hiddenDiv');
+    const hiddenAudio = document.getElementById('hiddenAudio');
 
+    // Показ div
+    hiddenDiv.style.display = 'block';
+    // Відтворення музики
+    hiddenAudio.play();
 
-
-
-
-
+    // Приховування div та зупинка музики через 3 секунди
+    setTimeout(() => {
+        hiddenDiv.style.display = 'none';
+        hiddenAudio.pause();
+        hiddenAudio.currentTime = 0; // Скидання аудіо до початку
+    }, 1000);
+}
