@@ -1,4 +1,4 @@
-var versionText = '1.6/0';
+var versionText = '1.6/1';
 
 function setVersionText() {
     // Отримати елемент <p> для відображення версії
@@ -94,3 +94,15 @@ function showDivAndPlayMusic() {
         hiddenAudio.currentTime = 0; // Скидання аудіо до початку
     }, 1000);
 }
+
+
+
+function showPopup(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function hidePopup(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+
