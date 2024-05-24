@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(22,22,30);
+background: linear-gradient(173deg, rgb(54, 54, 61) 1%, rgb(39, 39, 45) 42%, rgba(76,76,83,1) 76%, rgb(57, 57, 57) 100%);
+
+}
+
+main{
+    text-align: center;
+}
+
+.name_site_ops{
+padding-left: 20px;
+color:00D7CB;
+font-family: 'Kalam';
+margin-top: 10px;
+
+display: flex;
+        align-items: center;
+}
+
+.name_site{
+    font-size: 30px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.text_info{
+    color: rgb(0, 200, 255);
+    font-family: 'Jura';
+    font-size: 20px;
+    max-width:800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* вирівнювання по горизонталі по центру */
+}
+
+.pos1 {
+    width: auto;
+    text-align: left; /* текст всередині прилягатиме до лівої стінки */
+}
+
+.text_info2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Jura';
+    font-size: 15px;
+    padding: 20px;
+    text-align: left; /* текст всередині буде вирівняно по лівій стінці */
+}
+
+
+
+img{
+    width: 80px;
+    margin: 5px;
+    margin-top: -5px;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+#versionInfo{
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.Exid{
+    border: 0px;
+    border-radius: 10px;
+    background-color: D8D8D8;
+    width: 120px;
+    padding: 5px;
+    margin: 10px;
+    bottom: 0;
+    position: fixed;
+}
