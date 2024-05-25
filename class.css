@@ -202,3 +202,16 @@ img{
 .popup .close-btn button {
     padding: 5px 10px;
 }
+
+
+.N10{
+    color:black;
+    background-color: C1C1C1 ;
+    border: 0px;
+    width: 335px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 7px;
+}
