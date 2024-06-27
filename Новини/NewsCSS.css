@@ -281,3 +281,27 @@ color: #00bbff;
     padding-left: 260px;
     }
 }
+
+
+.news7_t1{
+    background-color: rgb(154, 154, 154);
+    width: 340px;
+    height: auto;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 5px;
+   display: inline-block;
+
+    p{
+        font-size: 15px;
+        text-align: left;
+    }
+
+    a{
+        margin-left: 120px;
+    }
+
+    .datepost{
+    padding-left: 260px;
+    }
+}
